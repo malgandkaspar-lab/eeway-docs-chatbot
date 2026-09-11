@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eeway Docs Assistant</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="header-title">Eeway Docs Assistant</div>
+      <div class="header-subtitle">Ask how to use Eeway &mdash; answers are grounded in docs.eeway.eu</div>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite"></main>
+
+    <form id="form" class="composer">
+      <textarea
+        id="input"
+        rows="1"
+        placeholder="e.g. How do I create an order?"
+        autocomplete="off"
+      ></textarea>
+      <button id="send" type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/chat.js"></script>
+</body>
+</html>

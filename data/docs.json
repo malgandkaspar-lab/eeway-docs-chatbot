@@ -1,0 +1,470 @@
+[
+  {
+    "id": "/getting-started/overview/#0",
+    "url": "https://docs.eeway.eu/getting-started/overview/",
+    "title": "Overview",
+    "section": "Getting Started",
+    "lang": "en",
+    "heading": "Overview",
+    "text": "Eeway is an electronic waybill and warehouse management system designed to streamline workflows between suppliers, buyers, and transport companies, ensuring smooth, efficient operations with full control and transparency for every party involved.\n\n- 100% Paperless workflow\n\nEliminate paperwork entirely - create and send waybills digitally, with no printing, no paper documents, and less manual workload.\n\n- Seamless integration\n\nExchange data with EVR, KPDC and LANK. Robust API for seamless integration with client systems.\n\n- Full potential of automation\n\nFrom automated weighbridges and volume measurement systems to boom gate and traffic light control - reduced waiting times with our agile automation solutions."
+  },
+  {
+    "id": "/getting-started/overview/#1",
+    "url": "https://docs.eeway.eu/getting-started/overview/",
+    "title": "Overview",
+    "section": "Getting Started",
+    "lang": "en",
+    "heading": "Overview",
+    "text": "- Complete overview and reporting\n\nWith all documents in one system, you have a comprehensive view of all your operations. Plan deliveries, analyze efficiency, and generate reports.\n\nMore than 2000 companies have joined the system, including material suppliers, transport companies, port operators and buyers, including major industrial plants in Estonia, Latvia, and Lithuania."
+  },
+  {
+    "id": "/getting-started/how-to-join/#0",
+    "url": "https://docs.eeway.eu/getting-started/how-to-join/",
+    "title": "How to join",
+    "section": "Getting Started",
+    "lang": "en",
+    "heading": "How to join",
+    "text": "Whether you require a waybill solution, port-level digitalization, volume measurement or weighbridge automation, we can offer the optimal solution with pricing options that scale with your operations.\n\nTo join the system, please fill out the request form, and our representative will set up an account for you and get in touch to assist with onboarding:\n\nhttps://onboard.eeway.eu/en/register/"
+  },
+  {
+    "id": "/getting-started/contacts-support/#0",
+    "url": "https://docs.eeway.eu/getting-started/contacts-support/",
+    "title": "Contacts & Support",
+    "section": "Getting Started",
+    "lang": "en",
+    "heading": "Contacts & Support",
+    "text": "Eeway OÜ\n\nReg no: 12021556\n\nVAT no: EE101415688\n\nAddress: Järvevana tee 9f, Tallinn 11314, Estonia\n\nPhone: +372 646 1078\n\nE-mail: info@loadmon.com"
+  },
+  {
+    "id": "/use-cases/suppliers/#0",
+    "url": "https://docs.eeway.eu/use-cases/suppliers/",
+    "title": "Suppliers",
+    "section": "Use Cases",
+    "lang": "en",
+    "heading": "Suppliers",
+    "text": "Advantages of Eeway digitalised waybills compared to traditional paper waybills:\n\n- Faster and more accurate documentation\n\nEeway allows waybills to be created, sent, and stored digitally. The supplier no longer needs to fill out paper documents manually or wait for them to be forwarded — all necessary information moves automatically within the system and can be checked before the shipment reaches its destination. This significantly reduces the risk of errors and delays.\n\n- Real-time tracking\n\nEeway enables real-time monitoring of shipments and provides confirmation of delivery. This gives the supplier a clear overview of the goods’ location and helps prevent misunderstandings related to shipments.\n\n- Seamless integration with various systems"
+  },
+  {
+    "id": "/use-cases/suppliers/#1",
+    "url": "https://docs.eeway.eu/use-cases/suppliers/",
+    "title": "Suppliers",
+    "section": "Use Cases",
+    "lang": "en",
+    "heading": "Suppliers",
+    "text": "Eeway is compatible with weighing, gate, and volume measurement systems, ensuring smooth data flow without any manual intervention."
+  },
+  {
+    "id": "/use-cases/transport-companies/#0",
+    "url": "https://docs.eeway.eu/use-cases/transport-companies/",
+    "title": "Transport companies",
+    "section": "Use Cases",
+    "lang": "en",
+    "heading": "Transport companies",
+    "text": "Compared to paper waybills, the key advantage of digital EEWay waybills is that they significantly reduce the need for manual data entry. Since drivers only need to select the correct order to create a waybill, the risk of errors is also greatly reduced.\n\nThe transport company has a comprehensive overview of all shipments, vehicles, and drivers in one central location."
+  },
+  {
+    "id": "/use-cases/receiver-of-materials/#0",
+    "url": "https://docs.eeway.eu/use-cases/receiver-of-materials/",
+    "title": "Material receivers",
+    "section": "Use Cases",
+    "lang": "en",
+    "heading": "Material receivers",
+    "text": "Advantages of Eeway compared to traditional paper waybills:\n\n- The implementation of Eeway ensures standardised data on waybills. The data is immediately accessible and can be easily checked.\n\n- Recipients can see the waybills created by suppliers, exactly what material is being delivered, and whether all requirements have been met.\n\n- In addition, Eeway’s integration with weighing and volume measurement systems speeds up the entire process. Data is automatically recorded on the waybills, which accelerates the whole loading process."
+  },
+  {
+    "id": "/how-to-use/vehicles-drivers/#0",
+    "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/",
+    "title": "Vehicles and drivers",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Vehicles and drivers",
+    "text": "Transport section stores all information about the drivers and transport companies. Only registered companies can transport material. Vehicles are linked to transport companies and drivers are validated, to minimize the risk of wrong data making it on to waybills.\n\nTo enter trucks number on a waybill it has to be assigned to a transport company. The company must also have the Transport role enabled.\n\nTo add a transport vehicle, press Add vehicle in the top right corner. Choose the correct company from the list and enter valid plate number, other information is optional. Also from here tracking can be turned on for each vehicle if it has the capability for it. Then press Save changes to save the vehicles information."
+  },
+  {
+    "id": "/how-to-use/vehicles-drivers/#1",
+    "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/",
+    "title": "Vehicles and drivers",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Vehicles and drivers",
+    "text": "For drivers, we have created an optimised web platform, where new waybills can be created quickly and conveniently.\n\nThe platform can be found here: https://lv.eeway.eu\n\nAll drivers must be entered in the system. To do so, go to the Transport menu and under the drivers sub-section press Add driver in the top right corner.\n\nThe following window will open:\n\nAfter entering the correct data press Add driver.\n\nIn the next section add the drivers phone number, language and country.\n\nPress Save changes to save the driver in to the system.\n\nIn the drivers section you can now see the driver that was added. To generate the SMS needed to log in to Drivers App press Generate code.\n\nUpon pressing Generate code, the following message will be shown:"
+  },
+  {
+    "id": "/how-to-use/vehicles-drivers/#2",
+    "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/",
+    "title": "Vehicles and drivers",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Vehicles and drivers",
+    "text": "Press Generate and send code to send an SMS to the driver.\n\nTo maintain a consistent style with the previous translations, you could phrase it like this:\n\nFor logging into the web platform, the driver must enter their vehicle and trailer registration numbers, as well as a PIN code. After clicking Search orders, the driver can see orders assigned to them.\n\nAt the top, active waybills will be shown.\n\nBelow that, all Orders are visible and by clicking on them, a new waybill can be generated.\n\nNext up a window will open showing the material. Press Create.\n\nThe driver will be generated a waybill with QR code than can be used for weighing or measuring material volume. When the weighings are done they will also be shown under the On dispatch or On Arrival sections."
+  },
+  {
+    "id": "/how-to-use/waybills/#0",
+    "url": "https://docs.eeway.eu/how-to-use/waybills/",
+    "title": "Waybills",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Waybills",
+    "text": "Eeway waybills are fully digitalised. All data is easily accessible and verifiable. In waybills section you can see all of the waybills. Waybills can be in 3 different type of states: Active, Completed and Cancelled. Active means that the delivery is still en route or still waiting to be completed. Completed or Cancelled waybills are essentially finished and not active anymore.\n\nWaybill section:\n\nWaybills can be searched by the unique waybill number. In addition, various filters can be used to find the waybills that you are looking for.\n\nTo create a new waybill press the Create waybill button on the top right corner.\n\nAn example of waybill with weights attached to it:\n\nWhen creating a waybill, all of the mandatory fields have to be entered, otherwise the system won't let you send it and shows what information is missing. Other information is optional and is based on the material receivers needs. For example some might demand Sender representative, Contact number or etc. while others don't."
+  },
+  {
+    "id": "/how-to-use/waybills/#1",
+    "url": "https://docs.eeway.eu/how-to-use/waybills/",
+    "title": "Waybills",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Waybills",
+    "text": "As soon as the waybill is created it becomes available in the EEWay mobile app with a unique QR code used to start material weighing or measuring process.\n\nTo make life easier for both you and the drivers, we highly recommend using Orders. This let's you enter information once and when creating a waybill you only have to choose the correct order ffrom the selection and information will be automatically added. Simply press on the Order bar and your previously made Orders are all visible."
+  },
+  {
+    "id": "/how-to-use/orders/create-order/#0",
+    "url": "https://docs.eeway.eu/how-to-use/orders/create-order/",
+    "title": "Create Order",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Create Order",
+    "text": "Creating an order is a great way to save time and avoid mistakes when the same operation needs to be preformed repeatedly. Correctly created orders will make your operations a lot smoother and more time effective.\n\nAn example of previously created Orders:\n\nOrders have several mandatory fields, and just like with waybills, they also feature different additional fields. Filling these out allows you to provide a more complete picture of the order and personalize it according to your specific needs.\n\nYou can create a new order by pressing on Create order in the top right corner.\n\nTo create an Order you first need to have entered the following information related to your company: Receiver, Receiver site, Supplier, Material. It is also recommended to enter other optional information such as Sender site, Transport company, Vehicles and Certificates."
+  },
+  {
+    "id": "/how-to-use/orders/create-order/#1",
+    "url": "https://docs.eeway.eu/how-to-use/orders/create-order/",
+    "title": "Create Order",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Create Order",
+    "text": "Under Status it's possible to choose whether the order is Open, Closed, Completed or Review is required.\n\nUnder the Options section it's also possible to configure the order to your specific needs.\n\nRequires CMR - Will allow CMR creation.\n\nDiscard incomplete option gives you the possibility to automatically cancel Active waybills after a specific time has ended.\n\nFor example:\n\nUnder Finish operations section there's 4 triggers which you can choose from on how and if you want the system to close the waybills automatically:\n\nAfter dispatch - Two known weights when sending material\n\nUpon Arrival - Two known weights when recieving material\n\nDispatch and arrival weight known - Four known weights at 2 different locations"
+  },
+  {
+    "id": "/how-to-use/orders/create-order/#2",
+    "url": "https://docs.eeway.eu/how-to-use/orders/create-order/",
+    "title": "Create Order",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Create Order",
+    "text": "On delivery confirmed - Driver can confirm the delivery of the material\n\nIt's also possible to attach notes to the order which will then be shown on every waybill that's created with this order. While public notes are visible to everyone, private notes are visible to only accounts that are in your company.\n\nIt's also possible to add Notifications and Authorizations to your order.\n\nWhen adding a subscriber for your order the following window will open and youre able to choose what event triggers the E-mail being sent out, what language it will be sent and if waybill and/or weight ticket PDF should also be attached to the E-mail.\n\nWhen adding an authorization to your order you can choose the company, it's acces level (view or edit) and add any notes if necessary (visible only to the creator of the order)."
+  },
+  {
+    "id": "/how-to-use/orders/delete-order/#0",
+    "url": "https://docs.eeway.eu/how-to-use/orders/delete-order/",
+    "title": "Delete Order",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Delete Order",
+    "text": "If the order is no longer needed, it can also be deleted from the system. To do this, click on the trash bin icon on the far right in the orders menu. It's also possible to duplicate an order."
+  },
+  {
+    "id": "/how-to-use/orders/sub-supplier-order/#0",
+    "url": "https://docs.eeway.eu/how-to-use/orders/sub-supplier-order/",
+    "title": "Sub-supplier order",
+    "section": "How to Use",
+    "lang": "en",
+    "heading": "Sub-supplier order",
+    "text": "Sub-supplier order is particularly useful in situations where production or service provision depends on sub-suppliers.\n\nIt's possible to lock the sub-supplier order, which means that the sub-supplier cannot make changes to the order created by you.\n\nYou can also specify which additional data the sub-supplier must fill in, for example, the sender’s representative, certificate, cadastral number, or cutting permit."
+  },
+  {
+    "id": "/automation/loadmon/#0",
+    "url": "https://docs.eeway.eu/automation/loadmon/",
+    "title": "Volume measurement (Loadmon)",
+    "section": "Automation",
+    "lang": "en",
+    "heading": "Volume measurement (Loadmon)",
+    "text": "LoadMon is an advanced log-measurement solution that captures accurate information about a load by measuring the height, width, and length of each batch of logs. Beyond displacement data, it also calculates the average diameter and automatically detects large cavities or loading-quality issues. The system does not require human intervention.\n\nThe system works with bulk wood, biomass, ore, or any material loaded into open containers.\n\nRead more about LoadMon"
+  },
+  {
+    "id": "/automation/weighbridge/#0",
+    "url": "https://docs.eeway.eu/automation/weighbridge/",
+    "title": "Weighbridge",
+    "section": "Automation",
+    "lang": "en",
+    "heading": "Weighbridge",
+    "text": "EEWay can integrate any type of weighbridge (needs to have an integration point or TCP protocol).\nThe truck’s gross weight and net weight are recorded on the scale, and the corresponding data is automatically transferred to Eeway.\n\nThe solution consists of QR terminals that are installed at the ends of the weighbridge. When the driver presents the QR code from his phone the weighing process will begin. During that process the stable weight is recorded, and photos are taken by network cameras.\n\nThe movement of the truck is controlled using standard traffic lights (Green and Red). Additionally, digital screens can be installed next to the weighbridge to show information to the driver about the weight of the load or instructions of where to put the load."
+  },
+  {
+    "id": "/automation/weighbridge/#1",
+    "url": "https://docs.eeway.eu/automation/weighbridge/",
+    "title": "Weighbridge",
+    "section": "Automation",
+    "lang": "en",
+    "heading": "Weighbridge",
+    "text": "This will generate a digital footprint of the load. Pictures are taken two times, when entering and exiting the yard. All photos are connected to a specific load which allows you to look at them from one place."
+  },
+  {
+    "id": "/automation/vehicle-access-control-vac/#0",
+    "url": "https://docs.eeway.eu/automation/vehicle-access-control-vac/",
+    "title": "Vehicle access control (VAC)",
+    "section": "Automation",
+    "lang": "en",
+    "heading": "Vehicle access control (VAC)",
+    "text": "During vehicle access control process, it is checked whether the truck that has arrived at the gate has permission to enter the area.\n\nYou can add new vehicles to the access list from the \"Permits\" section. To do this, click \"Create Permit\" in the top-right corner.\n\nUsing license plate recognition cameras, the system identifies the vehicle, verifies whether it has permission to enter the area, and all of this is fully documented.\n\nIn addition to the license plate, a photo of the vehicle is also saved."
+  },
+  {
+    "id": "/integrations/api-reference/#0",
+    "url": "https://docs.eeway.eu/integrations/api-reference/",
+    "title": "API Reference",
+    "section": "Integrations",
+    "lang": "en",
+    "heading": "API Reference",
+    "text": "The system allows data exchange through an API interface. To obtain an API access token, you first need to join the platform and request API access.\n\nEEWay can be integrated with your company's infosystem or with systems like EVR, Lank, KPDC.\n\nAPI specification: https://api.eeway.eu/"
+  },
+  {
+    "id": "/frequently-asked-questions/faq/#0",
+    "url": "https://docs.eeway.eu/frequently-asked-questions/faq/",
+    "title": "FAQ",
+    "section": "FAQ",
+    "lang": "en",
+    "heading": "FAQ",
+    "text": "I want the waybills in Eeway to close automatically. What do I need to do?\nWhen creating a new shipment/order, there are 4 options for automatically closing the waybills:\n\n- After dispatch – dispatch weight known\n\n- Upon arrival – arrival weight known\n\n- Dispatch and arrival weight known – both dispatch and arrival weight known\n\n- On delivery confirmed – delivery confirmed\n\nBy selecting the appropriate option, it becomes active and the waybills will close automatically according to the conditions you have predefined.\n\nHow can I add a new user to the company account?\n\nIn the left menu, select Settings → Users → Create user.\n\nNote: To add new users, your account must have the appropriate access rights.\n\nI changed data on the waybill/order. Why aren't the changes visible?"
+  },
+  {
+    "id": "/frequently-asked-questions/faq/#1",
+    "url": "https://docs.eeway.eu/frequently-asked-questions/faq/",
+    "title": "FAQ",
+    "section": "FAQ",
+    "lang": "en",
+    "heading": "FAQ",
+    "text": "After making the changes, you must click the Save changes button on the page. Otherwise, the changes will not be saved.\n\nIs it possible to get notifications when a shipment arrives at its destination?\n\nInside the order/shipment details, go to the Notifications section and add the email address that should receive the alerts.\n\nYou can set up notifications for the following events:\n\n- Operation created\n\n- Operation completed\n\n- Dispatch weight known\n\nNotifications can be sent in Estonian, Latvian, Lithuanian, English, or Russian. You can also choose to attach the waybill (PDF), weighing data, or both.\n\nHow can I add a new Site in Eeway?\n\nIn the left menu, select Companies. Next to your company, click the View button. In the loading Sites areas section, click Add site."
+  },
+  {
+    "id": "/frequently-asked-questions/faq/#2",
+    "url": "https://docs.eeway.eu/frequently-asked-questions/faq/",
+    "title": "FAQ",
+    "section": "FAQ",
+    "lang": "en",
+    "heading": "FAQ",
+    "text": "How can I add certificates for my company in Eeway?\n\nIn the left menu, select Companies. Next to your company, click the View button. In the certificates section, click Add certificate.\n\nHow can I add a new company to my company account list?\n\nTo add a new company or subsidiary to your account in Eeway:\n\n- In the left menu, select Companies.\n\n- Click the Add company button (in the top right corner).\n\n- Search for the needed company and click Add.\n\nWhere can I download my waybills?\n\n- Go to the waybills section. In the top right corner click Export (.xls) button.\n\nHow can I add CMR to my waybill?\n\n- CMR can be added to an order or a single waybill. If added to an order then all of the waybills that are created with this order will have the CMR added to them."
+  },
+  {
+    "id": "/frequently-asked-questions/faq/#3",
+    "url": "https://docs.eeway.eu/frequently-asked-questions/faq/",
+    "title": "FAQ",
+    "section": "FAQ",
+    "lang": "en",
+    "heading": "FAQ",
+    "text": "- To add this, click the Requires CMR button in the bottom right corner of the order or waybill under the Options section."
+  },
+  {
+    "id": "/alustamine/ulevaade/#0",
+    "url": "https://docs.eeway.eu/alustamine/ulevaade/",
+    "title": "Ülevaade",
+    "section": "Alustamine",
+    "lang": "et",
+    "heading": "Ülevaade",
+    "text": "Eeway on elektrooniline saatelehe ja laohalduse süsteem, mis on loodud tarnijate, ostjate ja transpordiettevõtete vaheliste töövoogude sujuvamaks muutmiseks, tagades tõrgeteta ja tõhusa toimimise ning täieliku kontrolli ja läbipaistvuse kõigile osapooltele.\n\n- 100% digitaalne tööprotsess\n\nLoobu täielikult paberist – koosta ja saada saatelehti digitaalselt, ilma printimise, paber­dokumentide ja liigse käsitööta.\n\n- Sujuv integratsioon\n\nVaheta andmeid EVR-i, KPDC ja LANK-iga. Töökindel API võimaldab lihtsat integreerimist kliendisüsteemidega.\n\n- Täielik automatiseerimise potentsiaal\n\nAlates automaatsetest kaalu mõõteseadmetest ja mahu mõõtesüsteemidest kuni tõkkepuude ja fooride juhtimiseni – meie paindlikud automatiseerimislahendused vähendavad ooteaegu."
+  },
+  {
+    "id": "/alustamine/ulevaade/#1",
+    "url": "https://docs.eeway.eu/alustamine/ulevaade/",
+    "title": "Ülevaade",
+    "section": "Alustamine",
+    "lang": "et",
+    "heading": "Ülevaade",
+    "text": "- Täielik ülevaade ja aruandlus\n\nKõik dokumendid ühes süsteemis annavad tervikliku ülevaate sinu tegevusest. Planeeri tarneid, analüüsi efektiivsust ja loo aruandeid.\n\nRohkem kui 2000 ettevõtet on süsteemiga liitunud, sealhulgas materjalitarnijad, transpordiettevõtted, sadamaoperaatorid ja ostjad, nende seas ka suured tööstusettevõtted Eestis, Lätis ja Leedus."
+  },
+  {
+    "id": "/alustamine/kuidas-liituda/#0",
+    "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/",
+    "title": "Kuidas liituda",
+    "section": "Alustamine",
+    "lang": "et",
+    "heading": "Kuidas liituda",
+    "text": "Kas vajate saatelehtede lahendust, sadama tasemel digitaliseerimist, mahu mõõtmist või kaalumise automatiseerimist? Leiame teile sobivaima lahenduse ning pakume paindlikke hinnavõimalusi, mis arvestavad teie tegevusmahuga.\n\nSüsteemiga liitumiseks palun täitke päringuvorm. Loome teile konto ning võtame teiega ühendust, et aidata süsteemi kasutuselevõtuga:\n\nhttps://onboard.eeway.eu/en/register/"
+  },
+  {
+    "id": "/alustamine/kontaktid-ja-abi/#0",
+    "url": "https://docs.eeway.eu/alustamine/kontaktid-ja-abi/",
+    "title": "Kontaktid ja abi",
+    "section": "Alustamine",
+    "lang": "et",
+    "heading": "Kontaktid ja abi",
+    "text": "Eeway OÜ\n\nReg. nr: 12021556\n\nKMKR nr: EE101415688\n\nAadress: Järvevana tee 9f, Tallinn 11314, Eesti\n\nTel. nr: +372 646 1078\n\nE-mail: info@loadmon.com"
+  },
+  {
+    "id": "/kasutusviisid/tarnijad/#0",
+    "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/",
+    "title": "Tarnijad",
+    "section": "Kasutusviisid",
+    "lang": "et",
+    "heading": "Tarnijad",
+    "text": "Eeway digitaliseeritud veoselehtede eelised võrreldes traditsiooniliste paberkujul veoselehtedega:\n\n- Kiirem ja täpsem dokumentatsioon\n\nEeway võimaldab digitaalselt luua, saata ja salvestada veoselehti. Tarnija ei pea käsitsi täitma paberdokumente ega ootama, kuni need jõuavad edasi - kõik vajalik info liigub süsteemis automaatselt ning seda on võimalik kontrollida enne kui veos jõuab sihtkohta, mis vähendab vigade ja viivituste riski.\n\n- Reaalajas jälgimine\n\nEeway võimaldab veokeid reaalajas jälgida ja saada kinnitust kohaletoimetamise kohta. See annab tarnijale selge ülevaate kauba asukoha kohta ning nii saab vältida saadetistega seotud arusaamatusi.\n\n- Sujuv integratsioon erinevate süsteemidega\n\nEeway ühildub kaalumiste, väravate ning mahumõõtmiste süsteemidega, mis tagab andmete sujuva liikumise, ilma käsitsi sekkumiseta."
+  },
+  {
+    "id": "/kasutusviisid/transpordiettevotted/#0",
+    "url": "https://docs.eeway.eu/kasutusviisid/transpordiettevotted/",
+    "title": "Transpordiettevõtted",
+    "section": "Kasutusviisid",
+    "lang": "et",
+    "heading": "Transpordiettevõtted",
+    "text": "Võrreldes paberil saatelehtedega seisneb digitaliseeritud EEWay veoselehtede eelis selles, et see vähendab märkimisväärselt käsitsi kirjutamise osakaalu ning kuna autojuhil piisab saatelehe loomiseks kõigest õige tellimuse valimisest, väheneb seeläbi ka vigade tekkimise risk.\n\nTranspordiettevõttel on kõikidest vedudest, masinatest ja juhtidest terviklik ülevaade ühes kohas."
+  },
+  {
+    "id": "/kasutusviisid/materjali-vastuvotja/#0",
+    "url": "https://docs.eeway.eu/kasutusviisid/materjali-vastuvotja/",
+    "title": "Materjali vastuvõtja",
+    "section": "Kasutusviisid",
+    "lang": "et",
+    "heading": "Materjali vastuvõtja",
+    "text": "Eeway eelised võrreldes traditsiooniliste paberkujul veoselehtedega:\n\n- Eeway kasutuselevõtt tagab standardiseeritud andmete olemasolu veoselehtedel. Andmetele on kohene ligipääs ning võimalus nende kontrollimiseks.\n\n- Vastuvõtjad näevad tarnijate poolt loodud saatelehti, mis materjaliga on täpselt tegemist, ning kas kõik nõuded on täidetud.\n\n- Lisaks kiirendab Eeway liidestus kaalu- ning mahumõõtmissüsteemidega kogu protsessi. Andmed salvestatakse veoselehtedele automaatselt, mistõttu kiireneb kogu mahalaadimisprotsess."
+  },
+  {
+    "id": "/kuidas-kasutada/soidukid-ja-juhid/#0",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/",
+    "title": "Sõidukid ja juhid",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Sõidukid ja juhid",
+    "text": "Transpordi sektsioon jäädvustab kõik informatsiooni juhtide ja transpordifirmade kohta. Ainult registreeritud firmad saavad materjali transportida. Autod on seotud transpordifirmadega ning juhid on valideeritud, et vähendada juhtumeid, kus valed andmed satuvad saatelehtedele.\n\nVeoki numbrimärgi sisestamiseks saatelehele peab see kõigepealt olema lisatud transpordifirma alla. Transpordifirmal peab olema lisatud ka Transport roll.\n\nVali listist õige firma ja sisesta õige numbrimärgi number, ülejäänud info on valikuline. Lisaks saab siit sisse lülitada ka positsioneerimise, kui selle võimekus on masinal olemas. Seejärel vajuta Salvesta muudatused.\n\nAutojuhtidele oleme loonud optimiseeritud veebiplatvormi, kus uute saatelehtede tegemine on kiire ja mugav."
+  },
+  {
+    "id": "/kuidas-kasutada/soidukid-ja-juhid/#1",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/",
+    "title": "Sõidukid ja juhid",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Sõidukid ja juhid",
+    "text": "Platvorm on leitav siit: https://lv.eeway.eu\n\nKõik juhid tuleb süsteemi sisestada. Selle jaoks mine Transport menüüsse ning juhtide sektsioonist vajuta üleval paremas nurgas Lisa autojuht.\n\nAvaneb järgnev aken:\n\nPeale õigete andmete sisestamist vajuta Lisa autojuht.\n\nJärgmises sektsioonis lisa autojuhi telefoninumber, suhtluskeel ja riik.\n\nVajuta Salvesta muudatused ning autojuht on nüüd süsteemi lisatud.\n\nAutojuhid sektsioonis on nüüd nähtav teie poolt lisatud autojuht. Autojuhi portaali sisselogimiseks vajaliku SMS saad saata vajutades nupul Loo kood.\n\nSeejärel kuvatakse järgnev teavitus:\n\nVajuta \"Loo ja saada kood\" et saata autojuhile SMS.\n\nAutojuht peab veebiplatvormil sisselogimise jaoks sisestama enda auto- ning treileri numbri ja PIN koodi. Vajutades Otsi tellimusi kuvatakse autojuhile talle tehtud tellimused."
+  },
+  {
+    "id": "/kuidas-kasutada/soidukid-ja-juhid/#2",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/",
+    "title": "Sõidukid ja juhid",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Sõidukid ja juhid",
+    "text": "Kõige ees kuvatakse aktiivsed veoselehed, mis on veel pooleli.\n\nNende all on valikus tellimused, mille peale vajutades saab autojuht genereerida uue veoselehe.\n\nJärgnevalt kuvatakse autojuhile aken, kus on näha materjal. Vajuta nupul Loo.\n\nAutojuhile genereeritakse saateleht koos QR koodiga, mida saab kasutada, kas kaalumisel või materjali mahu mõõtmisel. Kui kaalumised on tehtud, siis kuvatakse need ka Saatmisel või Saabumisel sektsioonides."
+  },
+  {
+    "id": "/kuidas-kasutada/saatelehed/#0",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/",
+    "title": "Saatelehed",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Saatelehed",
+    "text": "Eeway saatelehed on täielikult digitaliseeritud. Kõik andmed on hõlpsasti kättesaadavad ja kontrollitavad. Saatelehtede jaotises näete kõiki saatelehti. Saatelehed võivad olla kolmes erinevas olekus: Aktiivne, Lõpetatud või Tühistatud. Aktiivne tähendab, et vedu on veel pooleli või ootab lõpetamist. Lõpetatud ja Tühistatud saatelehed on lõpetatud ega ole enam aktiivsed.\n\nSaatelehtede jaotis:\n\nSaatelehti saab otsida unikaalse saatelehe numbri järgi. Lisaks on võimalik kasutada erinevaid filtreid, et leida soovitud saatelehed.\n\nUue saatelehe loomiseks vajutage paremas ülanurgas nuppu Loo saateleht.\n\nNäide saatelehest, millele on lisatud kaalumised:\n\nSaatelehe loomisel tuleb täita kõik kohustuslikud väljad. Vastasel juhul ei luba süsteem saatelehte esitada ning kuvab, milline teave on puudu. Ülejäänud väljad on valikulised ja sõltuvad materjali vastuvõtja nõuetest. Näiteks võivad mõned vastuvõtjad nõuda saatja esindaja nime, kontakttelefoni või muud lisateavet, samas kui teised seda ei soovi."
+  },
+  {
+    "id": "/kuidas-kasutada/saatelehed/#1",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/",
+    "title": "Saatelehed",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Saatelehed",
+    "text": "Kohe pärast saatelehe loomist muutub see kättesaadavaks EEWay mobiilirakenduses. Saatelehele luuakse unikaalne QR-kood, mida kasutatakse materjali kaalumise või mõõtmise protsessi alustamiseks.\n\nEt muuta töö nii teie kui ka juhtide jaoks lihtsamaks, soovitame kasutada tellimusi. Nii tuleb vajalik teave sisestada ainult üks kord. Saatelehe loomisel piisab seejärel õige tellimuse valimisest ning kõik seotud andmed täidetakse automaatselt. Selleks klõpsake Tellimus väljal, et näha kõiki teie varem loodud tellimusi, mille hulgast saate valida sobiva."
+  },
+  {
+    "id": "/kuidas-kasutada/tellimused/loo-tellimus/#0",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/",
+    "title": "Loo tellimus",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Loo tellimus",
+    "text": "Tellimuse loomine on suurepärane viis aja säästmiseks ja vigade vältimiseks, kui sama toimingut tuleb korduvalt teha. Korrektselt loodud tellimused muudavad teie tööprotsessid sujuvamaks ja ajakasutuse tõhusamaks.\n\nNäide varem loodud tellimustest:\n\nTellimustel on mitu kohustuslikku välja ning sarnaselt saatelehtedele sisaldavad need ka erinevaid lisavälju. Nende täitmine võimaldab anda tellimusest täielikuma ülevaate ning kohandada seda vastavalt teie vajadustele.\n\nUue tellimuse loomiseks klõpsake paremas ülanurgas nuppu Loo tellimus.\n\nTellimuse loomiseks peavad olema eelnevalt sisestatud järgmised ettevõttega seotud andmed: Vastuvõtja, Vastuvõtja asukoht, Tarnija, Materjal. Samuti on soovitatav sisestada ka järgmised valikulised andmed: Saatja asukoht, Transpordiettevõte, Sõidukid ning Sertifikaadid."
+  },
+  {
+    "id": "/kuidas-kasutada/tellimused/loo-tellimus/#1",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/",
+    "title": "Loo tellimus",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Loo tellimus",
+    "text": "Väljal Staatus saab valida tellimuse olekuks ühe järgmistest: Avatud, Suletud, Lõpetatud ning Vajab ülevaatamist.\n\nValikute (Options) jaotises on samuti võimalik tellimust kohandada vastavalt teie konkreetsetele vajadustele.\n\nRequires CMR– võimaldab CMR-dokumendi loomist.\n\nLõpetamata jätmise valik annab võimaluse automaatselt tühistada aktiivsed saatelehed pärast määratud aja möödumist.\n\nNäide:\n\nFinish operations jaotises on võimalik valida 4 erineva seade vahel, mis määravad, kuidas ja kas süsteem sulgeb saatelehed automaatselt:\n\nPärast väljasaatmist (After dispatch) – kaks teadaolevat kaalu materjali saatmisel\n\nSaabumisel (Upon arrival) – kaks teadaolevat kaalu materjali vastuvõtmisel\n\nVäljasaatmise ja saabumise kaal teada (Dispatch and arrival weight known) – neli teadaolevat kaalu kahes erinevas asukohas"
+  },
+  {
+    "id": "/kuidas-kasutada/tellimused/loo-tellimus/#2",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/",
+    "title": "Loo tellimus",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Loo tellimus",
+    "text": "Tarne kinnitamisel (On delivery confirmed) – juht saab kinnitada materjali kohaletoimetamise\n\nSamuti on võimalik tellimusele lisada märkmeid, mis kuvatakse kõigil selle tellimusega seotud loodud saatelehtedel. Avalikud märkmed on nähtavad kõigile kasutajatele. Privaatsed märkmed on nähtavad ainult teie ettevõtte kontodele.\n\nSamuti on võimalik lisada Teavitusi (Notifications) ja Autoriseerimisi (Authorizations) oma tellimusele.\n\nTellija lisamisel oma tellimusele avaneb järgmine aken, kus saate valida, millise sündmuse peale saadetakse kiri, mis keeles see saadetakse ning kas e-kirjale lisatakse ka saatelehe ja/või kaalu­mise kviitungi PDF-fail.\n\nTellimusele autoriseerimise lisamisel saate valida ettevõtte, määrata juurdepääsuõiguse (vaatamine või muutmine) ning lisada vajadusel märkusi (nähtavad ainult tellimuse loojale)."
+  },
+  {
+    "id": "/kuidas-kasutada/tellimused/kustuta-tellimus/#0",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/kustuta-tellimus/",
+    "title": "Kustuta tellimus",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Kustuta tellimus",
+    "text": "Kui tellimust enam ei vajata, saab selle samuti süsteemist kustutada. Selleks klõpsake tellimuste menüüs paremas servas asuval prügikasti ikoonil.\n\nSamuti on võimalik tellimust duplikeerida (kopeerida), et luua kiiresti sarnane uus tellimus ilma andmeid uuesti sisestamata."
+  },
+  {
+    "id": "/kuidas-kasutada/tellimused/alltarnija-tellimus/#0",
+    "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/alltarnija-tellimus/",
+    "title": "Alltarnija tellimus",
+    "section": "Kuidas kasutada",
+    "lang": "et",
+    "heading": "Alltarnija tellimus",
+    "text": "Alltarnija tellimus on eriti kasulik olukordades, kus tootmine või teenuse osutamine sõltub teistest tarnijatest.\n\nLisaks on võimalik alltarnija tellimus lukustada, mis tähendab, et alltarnija ei saa teie poolt loodud tellimuses muudatusi teha.\n\nSamuti saab määrata, millised lisaandmed peab alltarnija täitma, näiteks saatja esindaja, sertifikaat, katastrinumber või raieluba."
+  },
+  {
+    "id": "/automatiseerimine/mahu-mootmine-loadmon/#0",
+    "url": "https://docs.eeway.eu/automatiseerimine/mahu-mootmine-loadmon/",
+    "title": "Mahu mõõtmine (LoadMon)",
+    "section": "Automatiseerimine",
+    "lang": "et",
+    "heading": "Mahu mõõtmine (LoadMon)",
+    "text": "LoadMon on täiustatud koormate mõõtmise lahendus, mis kogub täpseid andmeid veose kohta, mõõtes iga palgikoorma kõrgust, laiust ja pikkust. Lisaks mahuandmetele arvutab see ka keskmise läbimõõdu ning tuvastab automaatselt suured tühimikud või virnastamiskvaliteedi probleemid. Süsteem ei vaja inimsekkumist, mistõttu saab välistada ka operaatori subjektiivsuse.\n\nSüsteem töötab ka puistematerjalidega, nagu puit, biomass, maak või mis tahes muu materjal, mida laaditakse avatud konteineritesse.\n\nLisaks on olemas veoste automaatne pildistamine ja dokumenteerimine vaidluste lahendamiseks.\n\nMõõdetud andmed saadetakse automaatselt Eewaysse, kus need lisatakse veoselehele.\n\nLoe rohkem LoadMoni kohta"
+  },
+  {
+    "id": "/automatiseerimine/kaalusild/#0",
+    "url": "https://docs.eeway.eu/automatiseerimine/kaalusild/",
+    "title": "Kaalusild",
+    "section": "Automatiseerimine",
+    "lang": "et",
+    "heading": "Kaalusild",
+    "text": "EEWayga saab integreerida mis tahes tüüpi autokaalu, eeldusel et sellel on olemas integratsiooniliides või see toetab TCP protokolli.\n\nVeoki bruto- ja netokaal registreeritakse kaalul ning vastavad andmed edastatakse automaatselt EEWay süsteemi.\n\nLahendus koosneb QR-terminalidest, mis paigaldatakse kaalu mõlemasse otsa. Kui juht näitab oma telefonist QR-koodi, käivitub kaalumisprotsess. Selle käigus registreeritakse stabiilne kaal ning võrgukaamerad teevad sõidukist fotod.\n\nVeoki liikumist juhitakse standardsete foorituledega (roheline ja punane). Lisaks saab autokaalu kõrvale paigaldada digitaalsed ekraanid, mis kuvavad juhile koorma kaalu või juhiseid selle kohta, kuhu koorem tuleb paigutada.\n\nSee loob koormast digitaalse jälje. Fotod tehakse kahel korral – alale sisenemisel ja sealt väljumisel. Kõik fotod seotakse konkreetse koormaga, mis võimaldab neid mugavalt ühest kohast vaadata ja hallata."
+  },
+  {
+    "id": "/automatiseerimine/soiduki-ligipaasu-kontroll/#0",
+    "url": "https://docs.eeway.eu/automatiseerimine/soiduki-ligipaasu-kontroll/",
+    "title": "Sõiduki ligipääsu kontroll (VAC)",
+    "section": "Automatiseerimine",
+    "lang": "et",
+    "heading": "Sõiduki ligipääsu kontroll (VAC)",
+    "text": "Sõiduki ligipääsu kontrolli käigus kontrollitakse, kas väravasse jõudnud veokil on luba alasse siseneda.\n\nSõidukite ligipääsuplokist saab lisada uusi sõidukeid ligipääsu nimekirja. Selle jaoks vajuta paremal nurgas \"Create permit\".\n\n\"Tööstusala\" alt on võimalik anda õigus teistel ettevõtetel taotleda ligipääsu teie ettevõtte territooriumile:\n\nNumbrimärgituvastuskaamerate abil tehakse kindlaks, mis sõidukiga on tegu, kas tal on luba alasse siseneda ning kõik see on dokumenteeritav.\n\nLisaks numbrimärgile salvestatakse sõidukist ka pilt."
+  },
+  {
+    "id": "/liidestus/api-viide/#0",
+    "url": "https://docs.eeway.eu/liidestus/api-viide/",
+    "title": "API viide",
+    "section": "Liidestus",
+    "lang": "et",
+    "heading": "API viide",
+    "text": "Süsteem võimaldab andmevahetust API-liidese kaudu. API ligipääsu võtme saamiseks tuleb kõigepealt liituda platvormiga ja taotleda API ligipääsu.\n\nEEWayd on võimalik liidestada ettevõtte enda infosüsteemiga või teiste süsteemidega nagu näiteks EVR, Lank, KPDC.\n\nAPI spetsifikatsioon: https://api.eeway.eu/"
+  },
+  {
+    "id": "/korduma-kippuvad-kusimused/kusimused/#0",
+    "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/",
+    "title": "Küsimused",
+    "section": "FAQ",
+    "lang": "et",
+    "heading": "Küsimused",
+    "text": "Tahan, et Eeways lõppeksid saatelehed automaatselt ära, mis pean tegema?\nTellimust luues on 4 valikut, kuidas saab veoselehti automaatselt ära lõpetada:\n\n- After dispatch – saatmise kaal teada\n\n- Upon arrival – saabumise kaal teada\n\n- Dispatch and arrival weight known – saatmise ja saabumise kaal teada\n\n- On delivery confirmed – kohaletoimetamine kinnitatud\n\nVajutades sobival valikul muutub see aktiivseks ning veoselehed lõppevad teie poolt ette määratud tingimustel.\n\nKuidas saab ettevõtte kontole uut kasutajat lisada?\n\n- Vasakul menüüs vali Settings → Users → Create user\n\nNB! Kasutajate lisamiseks peab sinu kontol olema vastav ligipääsuõigus.\n\nMuutsin veoselehel/tellimusel andmeid. Miks pole tehtud muudatusi näha?"
+  },
+  {
+    "id": "/korduma-kippuvad-kusimused/kusimused/#1",
+    "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/",
+    "title": "Küsimused",
+    "section": "FAQ",
+    "lang": "et",
+    "heading": "Küsimused",
+    "text": "Peale muudatuste tegemist peab vajutama lehel olevat Save changes nuppu. Vastasel juhul muudatusi ei salvestata ja need ei ole nähtavad.\n\nKas mul on võimalik saada teavitusi, kui veos on jõudnud sihtkohta?\n\nJah. Tellimuse vaates mine Notifications alla ja lisa e-maili aadress, kuhu soovid teavitust saada, kui saadetis jõuab sihtkohta.\n\nSündmused, mille kohta teavitusi saab seadistada:\n\n- Operation created – operatsioon loodud\n\n- Operation completed – operatsioon lõpetatud\n\n- Dispatch weight known – saatmise kaal teada\n\nTeavitusi saab saata eesti, läti, leedu, inglise või vene keeles. Lisaks saab valida, kas teavitusele lisatakse saateleht, kaalumise andmed või mõlemad.\n\nKuidas saab Eeways lisada uut lähtekohta?"
+  },
+  {
+    "id": "/korduma-kippuvad-kusimused/kusimused/#2",
+    "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/",
+    "title": "Küsimused",
+    "section": "FAQ",
+    "lang": "et",
+    "heading": "Küsimused",
+    "text": "Vasakul menüüs vali Ettevõtted, seejärel sinu ettevõtte real vajuta nupule Vaata.\n\nTööstusalade plokis vajuta nupule Lisa tööstusala — sellega saad lisada uue lähtekoha.\n\nKuidas saab Eeways lisada sertifikaate?\n\nVasakul menüüs vali Ettevõtted, seejärel sinu ettevõtte real vajuta nupule Vaata.\n\nSertifikaadid sektsioonis vajuta nupul Lisa sertifikaat.\n\nAvanenud aknas vali sertifikaadi tüüp, sisesta sertifikaadi number, kehtivusaeg ning vajuta Salvesta muudatused.\n\nKuidas saab lisada ettevõtet minu seotud ettevõtete nimekirja?\n\nUue ettevõtte või tütarettevõtte lisamiseks Eeway kontole:\n\n- Vasakpoolses menüüs vali Ettevõtted (Companies).\n\n- Klõpsa paremas ülanurgas nupule Lisa ettevõte.\n\n- Otsi üles soovitud ettevõte ja klõpsa nupule Lisa."
+  },
+  {
+    "id": "/korduma-kippuvad-kusimused/kusimused/#3",
+    "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/",
+    "title": "Küsimused",
+    "section": "FAQ",
+    "lang": "et",
+    "heading": "Küsimused",
+    "text": "Kus ma saan oma saatelehti alla laadida?\n\n- Mine saatelehtede sektsiooni. Paremas ülanurgas klõpsa nupul Export (.xls).\n\nKuidas saab saatelehele lisada rahvusvahelise veoselehe (CMR)?\n\n- CMRi ehk rahvusvahelist veodokumenti saab lisada kas tervele tellimusele või igale saatelehele eraldi. Kui see on lisatud tellimusele, siis kõikidel saatelehtedel, kuvatakse CMR kõikidel selle tellimusega loodud saatelehtedel.\n\n- Selle lisamiseks vajuta nupul Nõuab CMRi paremal all nurgas tellimusel või saatelehel Options jaotise all."
+  }
+]
