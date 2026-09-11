@@ -1,0 +1,546 @@
+[
+  {
+    "section": "Ülevaade",
+    "question": "Mis on Eeway ja mida see teeb?",
+    "answer": "Eeway on elektrooniline saatelehe ja laohalduse süsteem, mis aitab vahetada andmeid kiirelt ja tõhusalt, ilma paberita [1]. See tagab kiirema, täpsema ja standardiseeritud dokumentatsiooni ning võimaldab reaalajas jälgida veoseid ja kontrollida andmeid automaatselt [3]. Eeway integreerub kaalumis-, värava- ja mahumõõtmissüsteemidega, et vähendada ooteaega ja vigade riski [2].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 2,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 3,
+        "title": "Tarnijad",
+        "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/"
+      },
+      {
+        "n": 4,
+        "title": "Materjali vastuvõtja",
+        "url": "https://docs.eeway.eu/kasutusviisid/materjali-vastuvotja/"
+      },
+      {
+        "n": 5,
+        "title": "Material receivers",
+        "url": "https://docs.eeway.eu/use-cases/receiver-of-materials/"
+      }
+    ],
+    "seconds": 130.1,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Liitumine",
+    "question": "Kuidas ma saan Eeway süsteemiga liituda?",
+    "answer": "Süsteemiga liitumiseks täitke päringuvorm [1], misjärel luuakse teile konto ja aidatakse süsteemi kasutusele võtta. Vajadusel saab hiljem taotleda ka API ligipääsu [4].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "How to join",
+        "url": "https://docs.eeway.eu/getting-started/how-to-join/"
+      },
+      {
+        "n": 2,
+        "title": "Kuidas liituda",
+        "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/"
+      },
+      {
+        "n": 3,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 4,
+        "title": "API Reference",
+        "url": "https://docs.eeway.eu/integrations/api-reference/"
+      },
+      {
+        "n": 5,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      }
+    ],
+    "seconds": 48.4,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Kontaktid ja abi",
+    "question": "Kuidas ma saan toega ühendust võtta?",
+    "answer": "Kui soovid meiega ühendust võtta, täida päringuvorm: https://onboard.eeway.eu/en/register/ [3]. Võtame seejärel teiega ühendust, et aidata süsteemi kasutuselevõtuga.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Kontaktid ja abi",
+        "url": "https://docs.eeway.eu/alustamine/kontaktid-ja-abi/"
+      },
+      {
+        "n": 2,
+        "title": "Contacts & Support",
+        "url": "https://docs.eeway.eu/getting-started/contacts-support/"
+      },
+      {
+        "n": 3,
+        "title": "Kuidas liituda",
+        "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/"
+      },
+      {
+        "n": 4,
+        "title": "How to join",
+        "url": "https://docs.eeway.eu/getting-started/how-to-join/"
+      },
+      {
+        "n": 5,
+        "title": "API Reference",
+        "url": "https://docs.eeway.eu/integrations/api-reference/"
+      }
+    ],
+    "seconds": 43.3,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Tarnijad",
+    "question": "Millised on Eeway eelised tarnijale?",
+    "answer": "Eeway pakub tarnijale kiiremat ja täpsemat dokumentatsiooni [1], reaalajas jälgimist [1] ning sujuvat integreerimist erinevate süsteemidega [1]. Lisaks vähendab see ooteaega automaatse andmevahetuse kaudu [5].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Tarnijad",
+        "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/"
+      },
+      {
+        "n": 2,
+        "title": "Suppliers",
+        "url": "https://docs.eeway.eu/use-cases/suppliers/"
+      },
+      {
+        "n": 3,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 4,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 5,
+        "title": "Materjali vastuvõtja",
+        "url": "https://docs.eeway.eu/kasutusviisid/materjali-vastuvotja/"
+      }
+    ],
+    "seconds": 61.5,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Transpordiettevõtted",
+    "question": "Millised on Eeway eelised transpordiettevõttele?",
+    "answer": "Eeway pakub transpordiettevõttele digitaalseid veoselehti, mis vähendavad käsitsi täitmise vajadust ja vigade riski [4]. See võimaldab juhtidel kiiremini ja tõhusamalt töötada, kuna neil on kõikidest vedudest, masinatest ja juhtidest terviklik ülevaade ühes kohas [4]. Lisaks vähendab see ooteaega ja tagab andmete sujuva vahetuse teiste süsteemidega [3].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 2,
+        "title": "Transport companies",
+        "url": "https://docs.eeway.eu/use-cases/transport-companies/"
+      },
+      {
+        "n": 3,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 4,
+        "title": "Transpordiettevõtted",
+        "url": "https://docs.eeway.eu/kasutusviisid/transpordiettevotted/"
+      },
+      {
+        "n": 5,
+        "title": "Tarnijad",
+        "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/"
+      }
+    ],
+    "seconds": 69.4,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Materjali vastuvõtja",
+    "question": "Millised on Eeway eelised materjali vastuvõtjale?",
+    "answer": "Eeway pakub materjali vastuvõtjale standardiseeritud andmeid, mis on koheselt ligipääsetavad ja kontrollitavad [1]. Vastuvõtjad näevad tarnijate poolt loodud saatelehti, mis täpselt määratlevad materjali ja nõuded [1]. Lisaks kiirendab Eeway liidestus kaalu- ja mahumõõtmissüsteemidega kogu protsessi [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Materjali vastuvõtja",
+        "url": "https://docs.eeway.eu/kasutusviisid/materjali-vastuvotja/"
+      },
+      {
+        "n": 2,
+        "title": "Material receivers",
+        "url": "https://docs.eeway.eu/use-cases/receiver-of-materials/"
+      },
+      {
+        "n": 3,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 4,
+        "title": "Tarnijad",
+        "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/"
+      },
+      {
+        "n": 5,
+        "title": "Suppliers",
+        "url": "https://docs.eeway.eu/use-cases/suppliers/"
+      }
+    ],
+    "seconds": 63.2,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Sõidukid ja juhid",
+    "question": "Kuidas lisada süsteemi uus sõiduk?",
+    "answer": "Uue sõiduki lisamiseks mine Transpordi menüüsse ja vajuta paremas ülanurgas nupule \"Lisa sõiduk\" [3]. Vali õige transpordifirma loetelust ja sisesta kehtiv numbrimärgi number. Ülejäänud info on valikuline. Vajuta \"Salvesta muudatused\", et kinnitada lisamist [3].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Sõidukid ja juhid",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/"
+      },
+      {
+        "n": 2,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 3,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 4,
+        "title": "FAQ",
+        "url": "https://docs.eeway.eu/frequently-asked-questions/faq/"
+      },
+      {
+        "n": 5,
+        "title": "Sõidukid ja juhid",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/"
+      }
+    ],
+    "seconds": 67.2,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Saatelehed",
+    "question": "Kuidas luua saatelehte?",
+    "answer": "Saatelehe loomiseks vajutage paremas ülanurgas nuppu Loo saateleht [1]. Täida kõik kohustuslikud väljad, muidu ei luba süsteem saatelehte esitada [1]. Kui soovite saatelehe loomist lihtsustada, saate valida juba loodud tellimuse, mille alusel täidetakse kõik seotud andmed automaatselt [2].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Saatelehed",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/"
+      },
+      {
+        "n": 2,
+        "title": "Saatelehed",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/"
+      },
+      {
+        "n": 3,
+        "title": "Küsimused",
+        "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/"
+      },
+      {
+        "n": 4,
+        "title": "Küsimused",
+        "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/"
+      },
+      {
+        "n": 5,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      }
+    ],
+    "seconds": 79.6,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Tellimuse loomine",
+    "question": "Kuidas luua tellimust?",
+    "answer": "Kui soovite luua uut tellimust, klõpsake paremas ülanurgas nuppu \"Loo tellimus\" [1]. Tellimuse loomiseks peavad olema sisestatud kohustuslikud andmed: Vastuvõtja, Vastuvõtja asukoht, Tarnija, Materjal. Soovitatav on sisestada ka valikulised andmed nagu Saatja asukoht, Transpordiettevõte, Sõidukid ning Sertifikaadid [2].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 2,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 3,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 4,
+        "title": "Kustuta tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/kustuta-tellimus/"
+      },
+      {
+        "n": 5,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 97.8,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Tellimuse kustutamine",
+    "question": "Kuidas kustutada tellimust?",
+    "answer": "Kui soovid kustutada tellimust, klõpsa tellimuste menüüs paremas servas asuval prügikasti ikoonil [1]. Tellimust on samuti võimalik kustutada avatud tellimuse vaates [2].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Kustuta tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/kustuta-tellimus/"
+      },
+      {
+        "n": 2,
+        "title": "Delete Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/delete-order/"
+      },
+      {
+        "n": 3,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 4,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 5,
+        "title": "Küsimused",
+        "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/"
+      }
+    ],
+    "seconds": 87.4,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Alltarnija tellimus",
+    "question": "Mis on alltarnija tellimus?",
+    "answer": "Alltarnija tellimus on tellimus, mille eesmärk on tootmine või teenuse osutamine teiste tarnijate kaudu [1]. Sellel tellimusel on võimalik määrata lisaandmeid, näiteks saatja esindaja või raieluba, ning see võib olla lukustatud, et alltarnija ei saa seda muuta.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Alltarnija tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/alltarnija-tellimus/"
+      },
+      {
+        "n": 2,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 3,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 4,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 5,
+        "title": "Kustuta tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/kustuta-tellimus/"
+      }
+    ],
+    "seconds": 108.1,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Loadmon",
+    "question": "Mis on mahu mõõtmine (Loadmon)?",
+    "answer": "Mahu mõõtmine (LoadMon) on täiustatud koormate mõõtmise lahendus, mis kogub täpseid andmeid veose kohta, mõõtes iga palgikoorma kõrgust, laiust ja pikkust [1]. Lisaks arvutab see keskmise läbimõõdu ja tuvastab automaatselt suured tühimikud või virnastamiskvaliteedi probleemid [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Mahu mõõtmine (LoadMon)",
+        "url": "https://docs.eeway.eu/automatiseerimine/mahu-mootmine-loadmon/"
+      },
+      {
+        "n": 2,
+        "title": "Volume measurement (Loadmon)",
+        "url": "https://docs.eeway.eu/automation/loadmon/"
+      },
+      {
+        "n": 3,
+        "title": "Contacts & Support",
+        "url": "https://docs.eeway.eu/getting-started/contacts-support/"
+      },
+      {
+        "n": 4,
+        "title": "Kontaktid ja abi",
+        "url": "https://docs.eeway.eu/alustamine/kontaktid-ja-abi/"
+      },
+      {
+        "n": 5,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      }
+    ],
+    "seconds": 94,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Kaalusild",
+    "question": "Kuidas kaalusilla integratsioon töötab?",
+    "answer": "Kaalusilla integratsioon töötab nii, et QR-terminalid paigaldatakse kaalusilla mõlemasse otsa [1]. Kui juht näitab oma telefonist QR-koodi, käivitub kaalumisprotsess, kus registreeritakse stabiilne kaal ja võrgukaamerad teevad sõidukist fotod [1]. Fotod tehakse kahel korral – alale sisenemisel ja sealt väljumisel – ning kõik fotod seotakse konkreetse koormaga [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Kaalusild",
+        "url": "https://docs.eeway.eu/automatiseerimine/kaalusild/"
+      },
+      {
+        "n": 2,
+        "title": "Weighbridge",
+        "url": "https://docs.eeway.eu/automation/weighbridge/"
+      },
+      {
+        "n": 3,
+        "title": "Kuidas liituda",
+        "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/"
+      },
+      {
+        "n": 4,
+        "title": "How to join",
+        "url": "https://docs.eeway.eu/getting-started/how-to-join/"
+      },
+      {
+        "n": 5,
+        "title": "Waybills",
+        "url": "https://docs.eeway.eu/how-to-use/waybills/"
+      }
+    ],
+    "seconds": 118.2,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Sõiduki ligipääsu kontroll",
+    "question": "Mis on sõiduki ligipääsu kontroll?",
+    "answer": "Sõiduki ligipääsu kontroll (VAC) on protsess, kus kontrollitakse, kas saabunud veokil on luba alasse siseneda [1]. Selle käigus tuvastatakse sõiduk, kontrollitakse luba ning kogu teave dokumenteeritakse [2].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Sõiduki ligipääsu kontroll (VAC)",
+        "url": "https://docs.eeway.eu/automatiseerimine/soiduki-ligipaasu-kontroll/"
+      },
+      {
+        "n": 2,
+        "title": "Vehicle access control (VAC)",
+        "url": "https://docs.eeway.eu/automation/vehicle-access-control-vac/"
+      },
+      {
+        "n": 3,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 4,
+        "title": "Sõidukid ja juhid",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/"
+      },
+      {
+        "n": 5,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      }
+    ],
+    "seconds": 97.9,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "API",
+    "question": "Kas Eeway’l on API teiste süsteemidega liidestamiseks?",
+    "answer": "Jah, Eeway’l on API, mis võimaldab liidestada teiste süsteemidega, näiteks EVR, KPDC ja LANK [3]. API spetsifikatsioon on saadaval aadressil https://api.eeway.eu/ [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "API viide",
+        "url": "https://docs.eeway.eu/liidestus/api-viide/"
+      },
+      {
+        "n": 2,
+        "title": "API Reference",
+        "url": "https://docs.eeway.eu/integrations/api-reference/"
+      },
+      {
+        "n": 3,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 4,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 5,
+        "title": "Suppliers",
+        "url": "https://docs.eeway.eu/use-cases/suppliers/"
+      }
+    ],
+    "seconds": 77.7,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "KKK",
+    "question": "Kuidas saab saatelehti automaatselt lõpetada?",
+    "answer": "Saatelehtede automaatseks lõpetamiseks vali tellimuse loomise ajal üks neljast võimalusest: After dispatch, Upon arrival, Dispatch and arrival weight known või On delivery confirmed [1]. Vajutades sobival valikul muutub see aktiivseks ning saatelehed lõpevad teie määratud tingimustel.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Küsimused",
+        "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/"
+      },
+      {
+        "n": 2,
+        "title": "Saatelehed",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/"
+      },
+      {
+        "n": 3,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 4,
+        "title": "Küsimused",
+        "url": "https://docs.eeway.eu/korduma-kippuvad-kusimused/kusimused/"
+      },
+      {
+        "n": 5,
+        "title": "Saatelehed",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/saatelehed/"
+      }
+    ],
+    "seconds": 105.8,
+    "edited": "manually corrected Estonian grammar/phrasing"
+  }
+]

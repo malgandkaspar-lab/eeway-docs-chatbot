@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const { loadIndex } = require("./lib/retrieve");
 const { loadSemanticIndex } = require("./lib/semantic-retrieve");
+const { loadQuestionCache } = require("./lib/question-cache");
 const { createBackend } = require("./lib/llm");
 
 const PORT = process.env.PORT || 3000;
@@ -29,8 +30,8 @@ function buildSystemPrompt(context) {
 Rules:
 - Answer using only the information in the provided excerpts. Do not use outside knowledge about Eeway.
 - If the excerpts don't contain the answer, say you don't know and suggest the user check the "Contacts & Support" page or the full docs at https://docs.eeway.eu.
-- Keep answers concise and practical (use short paragraphs or numbered/bulleted steps when explaining a process).
-- This is a chat bubble, not a document: do not use markdown headings (#, ##). Plain paragraphs and "1. ..." numbered/bulleted lists are fine; **bold** is fine for emphasis.
+- BE BRIEF. This is a chat bubble, not a manual page. Prefer 2-4 short sentences. If steps are genuinely needed, use at most 4-5 short steps (a few words each, not full sentences) and skip steps that just restate the obvious (e.g. "review and finalize"). Never pad the answer with a closing offer to help further or a restated summary.
+- Do not use markdown headings (#, ##). Plain paragraphs and "1. ..." numbered/bulleted lists are fine; **bold** is fine for emphasis.
 - When you use information from an excerpt, cite it inline like [1], [2] matching the excerpt numbers below.
 - Never invent URLs, buttons, menu names, or features that are not mentioned in the excerpts.
 - Always reply in the same language the user's question was written in, even if the excerpts you're using are in a different language (translate the relevant information rather than switching languages). Write that language correctly and fluently.
@@ -70,6 +71,13 @@ async function main() {
     }
     return bm25.search(query, topK);
   }
+
+  const questionCache = loadQuestionCache();
+  console.log(
+    questionCache.entries.length
+      ? `Loaded ${questionCache.entries.length} cached answers (instant reply on a close-enough match).`
+      : "No question cache found - every question will go through live generation. Run \"node scripts/sample-qa.js\" then \"node scripts/embed-questions.js\" to build one."
+  );
 
   const backend = await createBackend(process.env);
   if (backend) {
@@ -118,6 +126,14 @@ async function main() {
           .map((m) => ({ role: m.role, content: m.content }));
       }
 
+      const cacheHit = await questionCache.match(message, cleanHistory).catch((err) => {
+        console.error(`Question cache lookup failed (${err.message}), skipping it.`);
+        return null;
+      });
+      if (cacheHit) {
+        return res.json({ answer: cacheHit.answer, sources: cacheHit.sources, cached: true });
+      }
+
       const results = await search(message, TOP_K);
       const context = results.length
         ? buildContext(results)
@@ -147,6 +163,7 @@ async function main() {
       ok: true,
       chunks: bm25.chunks.length,
       retrieval: semantic ? "semantic" : "keyword",
+      cachedQuestions: questionCache.entries.length,
       backend: backend ? { name: backend.name, model: backend.model } : null,
     });
   });

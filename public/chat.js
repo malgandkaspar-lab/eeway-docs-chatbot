@@ -40,10 +40,20 @@
     if (el) el.remove();
   }
 
-  function addMessage(role, text, { sources, isError } = {}) {
+  function addMessage(role, text, { sources, isError, cached } = {}) {
     const div = document.createElement("div");
     div.className = "msg " + (isError ? "error" : role === "user" ? "user" : "bot");
-    div.innerHTML = renderInline(text);
+
+    if (cached) {
+      const badge = document.createElement("div");
+      badge.className = "cached-badge";
+      badge.textContent = "⚡ instant answer";
+      div.appendChild(badge);
+    }
+
+    const body = document.createElement("div");
+    body.innerHTML = renderInline(text);
+    div.appendChild(body);
 
     if (sources && sources.length) {
       const src = document.createElement("div");
@@ -101,7 +111,7 @@
         return;
       }
 
-      addMessage("assistant", data.answer, { sources: data.sources });
+      addMessage("assistant", data.answer, { sources: data.sources, cached: data.cached });
       history.push({ role: "assistant", content: data.answer });
     } catch (err) {
       loadingEl.remove();
