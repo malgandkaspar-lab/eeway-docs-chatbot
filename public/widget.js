@@ -92,7 +92,7 @@
       flex: none;
       border: none;
       background: transparent;
-      color: #1c1e21;
+      color: #1f95bd;
       cursor: pointer;
       border-radius: 8px;
       display: flex;
