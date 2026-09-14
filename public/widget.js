@@ -391,6 +391,54 @@
       scrollToBottom();
     }
 
+    // Streaming counterpart to renderMessage/pushMessage: creates an empty
+    // bot bubble up front and returns handles to fill it in as /api/chat's
+    // NDJSON deltas arrive, instead of waiting for the full answer.
+    function createLiveBubble(cached) {
+      const row = document.createElement("div");
+      row.className = "eew-row eew-row-bot";
+
+      const wrap = document.createElement("div");
+      wrap.className = "eew-bubble-wrap";
+
+      if (cached) {
+        const badge = document.createElement("div");
+        badge.className = "eew-badge";
+        badge.textContent = "⚡ instant answer";
+        wrap.appendChild(badge);
+      }
+
+      const bubble = document.createElement("div");
+      bubble.className = "eew-bubble eew-bubble-bot";
+      wrap.appendChild(bubble);
+
+      row.appendChild(wrap);
+      messagesEl.appendChild(row);
+      scrollToBottom();
+      return { wrap, bubble };
+    }
+
+    function setBubbleText(bubble, text) {
+      bubble.innerHTML = renderInline(text);
+      scrollToBottom();
+    }
+
+    function addSourcesToWrap(wrap, sources) {
+      if (!sources || !sources.length) return;
+      const src = document.createElement("div");
+      src.className = "eew-sources";
+      src.innerHTML =
+        "Sources: " +
+        sources
+          .map(
+            (s) =>
+              `<a href="${s.url}" target="_blank" rel="noopener">[${s.n}] ${escapeHtml(s.title)}</a>`
+          )
+          .join("&nbsp;&nbsp;");
+      wrap.appendChild(src);
+      scrollToBottom();
+    }
+
     const typingEl = document.createElement("div");
     typingEl.className = "eew-row eew-row-bot";
     typingEl.hidden = true;
@@ -436,14 +484,73 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ message: text, history }),
         });
-        const data = await res.json();
-        hideTyping();
 
         if (!res.ok) {
+          // Validation errors (bad request, no backend) are a single plain
+          // JSON body rather than a stream.
+          const data = await res.json().catch(() => ({}));
+          hideTyping();
           pushMessage({ role: "bot", text: data.error || "Something went wrong.", isError: true });
           return;
         }
-        pushMessage({ role: "bot", text: data.answer, sources: data.sources, cached: data.cached });
+
+        // /api/chat streams newline-delimited JSON: a "meta" line (sources,
+        // cached), then "delta" lines as the answer is generated, then
+        // "done" (or "error").
+        let live = null; // { wrap, bubble }
+        let accumulated = "";
+        let pendingSources = null;
+        let cachedFlag = false;
+        let sawError = false;
+
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = "";
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+
+          let idx;
+          while ((idx = buffer.indexOf("\n")) !== -1) {
+            const line = buffer.slice(0, idx).trim();
+            buffer = buffer.slice(idx + 1);
+            if (!line) continue;
+
+            let evt;
+            try {
+              evt = JSON.parse(line);
+            } catch {
+              continue;
+            }
+
+            if (evt.type === "meta") {
+              pendingSources = evt.sources;
+              cachedFlag = evt.cached;
+            } else if (evt.type === "delta") {
+              accumulated += evt.text;
+              if (!live) {
+                hideTyping();
+                live = createLiveBubble(cachedFlag);
+              }
+              setBubbleText(live.bubble, accumulated);
+            } else if (evt.type === "error") {
+              sawError = true;
+              hideTyping();
+              if (!live) {
+                pushMessage({ role: "bot", text: evt.message || "Something went wrong.", isError: true });
+              }
+            }
+            // "done" needs no handling - the loop just ends when the stream closes.
+          }
+        }
+
+        hideTyping();
+        if (live && !sawError) {
+          addSourcesToWrap(live.wrap, pendingSources);
+          messages.push({ role: "bot", text: accumulated, sources: pendingSources, cached: cachedFlag });
+        }
       } catch (err) {
         hideTyping();
         pushMessage({ role: "bot", text: "Network error — is the server running?", isError: true });
@@ -481,6 +588,13 @@
 
     pushMessage({
       role: "bot",
+      // Excluded from historyForApi(): without this, every visitor's first
+      // real question would carry this greeting as 1 turn of "history",
+      // which makes /api/chat's question cache always skip (a cached
+      // answer can't handle follow-up context, so it never matches once
+      // any history is present) - silently disabling instant answers for
+      // literally every first message.
+      skipHistory: true,
       text: "Hi, I'm the Eeway Assistant — ask me anything about using Eeway, or pick a question below.",
     });
   }
