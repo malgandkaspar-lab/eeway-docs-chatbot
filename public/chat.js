@@ -40,7 +40,9 @@
     if (el) el.remove();
   }
 
-  function addMessage(role, text, { sources, isError, cached } = {}) {
+  // Creates an (initially empty) message bubble and returns handles to
+  // update it as content streams in.
+  function createMessageEl(role, { isError, cached } = {}) {
     const div = document.createElement("div");
     div.className = "msg " + (isError ? "error" : role === "user" ? "user" : "bot");
 
@@ -52,27 +54,41 @@
     }
 
     const body = document.createElement("div");
-    body.innerHTML = renderInline(text);
     div.appendChild(body);
-
-    if (sources && sources.length) {
-      const src = document.createElement("div");
-      src.className = "sources";
-      src.innerHTML =
-        "Sources: " +
-        sources
-          .map(
-            (s) =>
-              `<a href="${s.url}" target="_blank" rel="noopener">[${s.n}] ${escapeHtml(
-                s.title
-              )}</a>`
-          )
-          .join("&nbsp;&nbsp;");
-      div.appendChild(src);
-    }
 
     chatEl.appendChild(div);
     chatEl.scrollTop = chatEl.scrollHeight;
+    return { div, body };
+  }
+
+  function setMessageText(body, text) {
+    body.innerHTML = renderInline(text);
+    chatEl.scrollTop = chatEl.scrollHeight;
+  }
+
+  function addSources(div, sources) {
+    if (!sources || !sources.length) return;
+    const src = document.createElement("div");
+    src.className = "sources";
+    src.innerHTML =
+      "Sources: " +
+      sources
+        .map(
+          (s) =>
+            `<a href="${s.url}" target="_blank" rel="noopener">[${s.n}] ${escapeHtml(
+              s.title
+            )}</a>`
+        )
+        .join("&nbsp;&nbsp;");
+    div.appendChild(src);
+    chatEl.scrollTop = chatEl.scrollHeight;
+  }
+
+  // Convenience for the simple, non-streaming cases (user echo, plain errors).
+  function addMessage(role, text, opts = {}) {
+    const { div, body } = createMessageEl(role, opts);
+    setMessageText(body, text);
+    addSources(div, opts.sources);
     return div;
   }
 
@@ -102,17 +118,71 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message, history: history.slice(0, -1) }),
       });
-      const data = await res.json();
-
-      loadingEl.remove();
 
       if (!res.ok) {
+        // Validation errors (bad request, no backend) are returned as a
+        // single plain JSON body rather than a stream.
+        const data = await res.json().catch(() => ({}));
+        loadingEl.remove();
         addMessage("assistant", data.error || "Something went wrong.", { isError: true });
         return;
       }
 
-      addMessage("assistant", data.answer, { sources: data.sources, cached: data.cached });
-      history.push({ role: "assistant", content: data.answer });
+      let answerEl = null; // { div, body }
+      let accumulated = "";
+      let pendingSources = null;
+      let sawError = false;
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+
+        let idx;
+        while ((idx = buffer.indexOf("\n")) !== -1) {
+          const line = buffer.slice(0, idx).trim();
+          buffer = buffer.slice(idx + 1);
+          if (!line) continue;
+
+          let evt;
+          try {
+            evt = JSON.parse(line);
+          } catch {
+            continue;
+          }
+
+          if (evt.type === "meta") {
+            pendingSources = evt.sources;
+            answerEl = createMessageEl("assistant", { cached: evt.cached });
+            loadingEl.remove();
+          } else if (evt.type === "delta") {
+            accumulated += evt.text;
+            if (!answerEl) {
+              answerEl = createMessageEl("assistant");
+              loadingEl.remove();
+            }
+            setMessageText(answerEl.body, accumulated);
+          } else if (evt.type === "error") {
+            sawError = true;
+            loadingEl.remove();
+            if (!answerEl) {
+              addMessage("assistant", evt.message || "Something went wrong.", { isError: true });
+            }
+          }
+          // "done" needs no handling - the loop just ends when the stream closes.
+        }
+      }
+
+      loadingEl.remove();
+
+      if (answerEl && !sawError) {
+        addSources(answerEl.div, pendingSources);
+        history.push({ role: "assistant", content: accumulated });
+      }
     } catch (err) {
       loadingEl.remove();
       addMessage("assistant", "Network error — is the server running?", {

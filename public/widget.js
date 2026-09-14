@@ -24,7 +24,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 14.5px;
       line-height: 1.5;
-      color: #1c1e21;
+      color: #1f95bd;
     }
     @keyframes eew-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
     @keyframes eew-bounce { 0%, 100% { opacity: .3; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-3px); } }
@@ -34,7 +34,7 @@
       height: 56px;
       border-radius: 50%;
       border: none;
-      background: #d84315;
+      background: #1f95bd;
       color: #ffffff;
       cursor: pointer;
       display: flex;
@@ -42,7 +42,7 @@
       justify-content: center;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
     }
-    .eew-launcher:hover { background: #c13c12; }
+    .eew-launcher:hover { background: #1f95bd; }
     .eew-launcher svg[hidden] { display: none; }
 
     .eew-panel {
@@ -92,7 +92,7 @@
       flex: none;
       border: none;
       background: transparent;
-      color: #1c1e21;
+      color: #1f95bd;
       cursor: pointer;
       border-radius: 8px;
       display: flex;
@@ -219,21 +219,21 @@
       border-radius: 19px;
       outline: none;
     }
-    .eew-input:focus { border-color: #d84315; }
+    .eew-input:focus { border-color: #1f95bd; }
     .eew-send-btn {
       width: 38px;
       height: 38px;
       flex: none;
       border: none;
       border-radius: 50%;
-      background: #d84315;
+      background: #1f95bd;
       color: #ffffff;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .eew-send-btn:hover { background: #c13c12; }
+    .eew-send-btn:hover { background: #1f95bd; }
     .eew-send-btn:disabled { opacity: 0.5; cursor: default; }
   `;
 

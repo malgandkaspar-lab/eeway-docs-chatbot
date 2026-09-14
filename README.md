@@ -21,6 +21,10 @@ How it works:
 5. It sends those excerpts + the question to an LLM (Claude, or a local
    model via Ollama), which answers using only that context, in the same
    language the question was asked in, and cites which excerpt(s) it used.
+   `/api/chat` streams the answer back as it's generated (see "Streaming
+   protocol" below) so the UI shows text appearing instead of a long silent
+   wait — this matters most with a local model, where a live answer can
+   take 30-120s depending on hardware.
 
 ## Setup
 
@@ -63,10 +67,13 @@ Optionally, build the instant-answer cache for common questions (skip
 this if you'd rather every question go through live generation):
 
 ```bash
-node scripts/sample-qa.js       # asks the running server 16 representative
-                                 # questions and saves the answers - review/
-                                 # edit data/sample-qa.json afterwards for
-                                 # quality before the next step
+node scripts/sample-qa.js       # asks the running server the questions in
+                                 # its QUESTIONS list and saves the answers -
+                                 # review/edit data/sample-qa.json afterwards
+                                 # for quality before the next step. Safe to
+                                 # re-run: it skips any question that already
+                                 # has a saved answer (pass --force to redo
+                                 # everything).
 node scripts/embed-questions.js # embeds those questions for cache matching
 ```
 
@@ -102,6 +109,20 @@ Then open http://localhost:3000 in your browser.
   0.83 cosine-similarity match — calibrated so real paraphrases (~0.87+)
   hit it and genuinely different questions (~0.76 or below) don't. A
   cache hit is marked `"cached": true` in the API response. To widen
-  coverage, add more entries to `data/sample-qa.json` (by hand or via
-  `scripts/sample-qa.js`), proofread the answers, then re-run
-  `node scripts/embed-questions.js`.
+  coverage, add more entries to `scripts/sample-qa.js`'s `QUESTIONS` list,
+  re-run it (it only asks the new ones) and proofread the new answers,
+  then re-run `node scripts/embed-questions.js`.
+- Both Ollama calls (the local LLM in `lib/llm.js`, and the embedder in
+  `lib/semantic-retrieve.js`) set `keep_alive: "30m"` so the model doesn't
+  unload between messages during normal interactive use (Ollama's default
+  is 5 minutes - the model was unloading during idle gaps as short as a
+  page reload, adding a ~70-130s reload on top of the next request).
+  Trade-off: ~6GB stays resident in memory for up to 30 minutes after your
+  last message.
+- **Streaming protocol**: `POST /api/chat` returns newline-delimited JSON
+  (`Content-Type: application/x-ndjson`), not a single JSON object: a
+  `{"type":"meta","sources":[...],"cached":bool}` line first, then zero or
+  more `{"type":"delta","text":"..."}` lines as the answer is generated,
+  then a final `{"type":"done"}` (or `{"type":"error","message":"..."}`)
+  line. `public/chat.js` shows how to consume it; `scripts/sample-qa.js`'s
+  `ask()` shows how to just collect the full answer from it.

@@ -7,7 +7,7 @@ const { loadQuestionCache } = require("./lib/question-cache");
 const { createBackend } = require("./lib/llm");
 
 const PORT = process.env.PORT || 3000;
-const TOP_K = 5;
+const TOP_K = 3;
 const MAX_MESSAGE_LEN = 2000;
 const MAX_HISTORY_TURNS = 8; // user+assistant messages kept for context
 
@@ -130,31 +130,57 @@ async function main() {
         console.error(`Question cache lookup failed (${err.message}), skipping it.`);
         return null;
       });
+
+      // Streamed as newline-delimited JSON so the UI can show the answer as
+      // it's generated instead of a silent multi-minute wait: one "meta"
+      // line (sources + whether this was a cache hit), then "delta" lines
+      // as text arrives, then a final "done" (or "error") line.
+      res.setHeader("Content-Type", "application/x-ndjson; charset=utf-8");
+      res.setHeader("Cache-Control", "no-cache");
+      const writeEvent = (evt) => res.write(JSON.stringify(evt) + "\n");
+
       if (cacheHit) {
-        return res.json({ answer: cacheHit.answer, sources: cacheHit.sources, cached: true });
+        writeEvent({ type: "meta", sources: cacheHit.sources, cached: true });
+        writeEvent({ type: "delta", text: cacheHit.answer });
+        writeEvent({ type: "done" });
+        return res.end();
       }
 
       const results = await search(message, TOP_K);
       const context = results.length
         ? buildContext(results)
         : "(No relevant excerpts were found for this question.)";
-
-      const answer = await backend.generate({
-        systemPrompt: buildSystemPrompt(context),
-        history: cleanHistory,
-        message,
-      });
-
       const sources = results.map((r, i) => ({
         n: i + 1,
         title: r.chunk.title,
         url: r.chunk.url,
       }));
 
-      res.json({ answer, sources });
+      writeEvent({ type: "meta", sources, cached: false });
+
+      try {
+        await backend.generate({
+          systemPrompt: buildSystemPrompt(context),
+          history: cleanHistory,
+          message,
+          onDelta: (text) => writeEvent({ type: "delta", text }),
+        });
+      } catch (genErr) {
+        console.error(genErr);
+        writeEvent({ type: "error", message: "Something went wrong answering that question." });
+      }
+      writeEvent({ type: "done" });
+      res.end();
     } catch (err) {
       console.error(err);
-      res.status(500).json({ error: "Something went wrong answering that question." });
+      if (!res.headersSent) {
+        res.status(500).json({ error: "Something went wrong answering that question." });
+      } else {
+        try {
+          res.write(JSON.stringify({ type: "error", message: "Something went wrong." }) + "\n");
+        } catch {}
+        res.end();
+      }
     }
   });
 

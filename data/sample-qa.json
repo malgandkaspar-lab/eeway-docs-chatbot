@@ -477,7 +477,7 @@
   },
   {
     "section": "API",
-    "question": "Kas Eeway’l on API teiste süsteemidega liidestamiseks?",
+    "question": "Kas Eeway'l on API teiste süsteemidega liidestamiseks?",
     "answer": "Jah, Eeway’l on API, mis võimaldab liidestada teiste süsteemidega, näiteks EVR, KPDC ja LANK [3]. API spetsifikatsioon on saadaval aadressil https://api.eeway.eu/ [1].",
     "sources": [
       {
@@ -506,8 +506,7 @@
         "url": "https://docs.eeway.eu/use-cases/suppliers/"
       }
     ],
-    "seconds": 77.7,
-    "edited": "manually corrected Estonian grammar/phrasing"
+    "seconds": 5.9
   },
   {
     "section": "KKK",
@@ -542,5 +541,373 @@
     ],
     "seconds": 105.8,
     "edited": "manually corrected Estonian grammar/phrasing"
+  },
+  {
+    "section": "Overview",
+    "question": "What is Eeway?",
+    "answer": "Eeway is an electronic waybill and warehouse management system designed to streamline workflows between suppliers, buyers, and transport companies, ensuring smooth, efficient operations with full control and transparency for every party involved [1]. It offers a 100% paperless workflow, seamless integration with EVR, KPDC, and LANK, and automation solutions to reduce waiting times [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 2,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 3,
+        "title": "Materjali vastuvõtja",
+        "url": "https://docs.eeway.eu/kasutusviisid/materjali-vastuvotja/"
+      }
+    ],
+    "seconds": 72.3
+  },
+  {
+    "section": "Overview",
+    "question": "What does Eeway do?",
+    "answer": "Eeway is an electronic waybill and warehouse management system designed to streamline workflows between suppliers, buyers, and transport companies, ensuring smooth, efficient operations with full control and transparency for every party involved [1]. It eliminates paperwork entirely by allowing digital creation and sending of waybills, reduces manual workload, and offers seamless integration with systems like EVR, KPDC, and LANK [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 2,
+        "title": "Ülevaade",
+        "url": "https://docs.eeway.eu/alustamine/ulevaade/"
+      },
+      {
+        "n": 3,
+        "title": "Tarnijad",
+        "url": "https://docs.eeway.eu/kasutusviisid/tarnijad/"
+      }
+    ],
+    "seconds": 33.8
+  },
+  {
+    "section": "How to join",
+    "question": "How do I sign up for Eeway?",
+    "answer": "To sign up for Eeway, fill out the request form at [https://onboard.eeway.eu/en/register/](https://onboard.eeway.eu/en/register/). Our representative will create an account for you and contact you to assist with onboarding [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Kuidas liituda",
+        "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/"
+      },
+      {
+        "n": 2,
+        "title": "How to join",
+        "url": "https://docs.eeway.eu/getting-started/how-to-join/"
+      },
+      {
+        "n": 3,
+        "title": "FAQ",
+        "url": "https://docs.eeway.eu/frequently-asked-questions/faq/"
+      }
+    ],
+    "seconds": 34.6
+  },
+  {
+    "section": "Contacts & Support",
+    "question": "How do I contact support?",
+    "answer": "You can contact Eeway support via email at info@loadmon.com [1], or by phone at +372 646 1078 [1]. For further assistance, visit the Contacts & Support page in the documentation [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Contacts & Support",
+        "url": "https://docs.eeway.eu/getting-started/contacts-support/"
+      },
+      {
+        "n": 2,
+        "title": "Kontaktid ja abi",
+        "url": "https://docs.eeway.eu/alustamine/kontaktid-ja-abi/"
+      },
+      {
+        "n": 3,
+        "title": "Kuidas liituda",
+        "url": "https://docs.eeway.eu/alustamine/kuidas-liituda/"
+      }
+    ],
+    "seconds": 36.2
+  },
+  {
+    "section": "Contacts & Support",
+    "question": "Who do I contact if I have a problem?",
+    "answer": "You can contact Eeway support via email at info@loadmon.com [1] or by phone at +372 646 1078 [2]. For further assistance, check the \"Contacts & Support\" page in the documentation.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Kontaktid ja abi",
+        "url": "https://docs.eeway.eu/alustamine/kontaktid-ja-abi/"
+      },
+      {
+        "n": 2,
+        "title": "Contacts & Support",
+        "url": "https://docs.eeway.eu/getting-started/contacts-support/"
+      },
+      {
+        "n": 3,
+        "title": "Sõidukid ja juhid",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/soidukid-ja-juhid/"
+      }
+    ],
+    "seconds": 34
+  },
+  {
+    "section": "Vehicles & Drivers",
+    "question": "How do I add a new vehicle?",
+    "answer": "To add a new vehicle, press Add vehicle in the top right corner [2]. Choose the correct company from the list and enter the valid plate number. Other information is optional. Tracking can be turned on if the vehicle supports it. Press Save changes to save the vehicle information.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 2,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 3,
+        "title": "FAQ",
+        "url": "https://docs.eeway.eu/frequently-asked-questions/faq/"
+      }
+    ],
+    "seconds": 42.4
+  },
+  {
+    "section": "Vehicles & Drivers",
+    "question": "How can I register a vehicle in the system?",
+    "answer": "To register a vehicle, go to the Transport section and click \"Add vehicle\" in the top right corner. Choose the correct company from the list and enter the valid plate number. Other information is optional. Press \"Save changes\" to save the vehicle information [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 2,
+        "title": "Vehicles and drivers",
+        "url": "https://docs.eeway.eu/how-to-use/vehicles-drivers/"
+      },
+      {
+        "n": 3,
+        "title": "Vehicle access control (VAC)",
+        "url": "https://docs.eeway.eu/automation/vehicle-access-control-vac/"
+      }
+    ],
+    "seconds": 30.2
+  },
+  {
+    "section": "Waybills",
+    "question": "How do I create a waybill?",
+    "answer": "To create a waybill, press the \"Create waybill\" button on the top right corner of the Waybills section [2]. Fill in all mandatory fields, as the system won't let you send it without complete information. Optional fields can be added based on the receiver's requirements.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Waybills",
+        "url": "https://docs.eeway.eu/how-to-use/waybills/"
+      },
+      {
+        "n": 2,
+        "title": "Waybills",
+        "url": "https://docs.eeway.eu/how-to-use/waybills/"
+      },
+      {
+        "n": 3,
+        "title": "FAQ",
+        "url": "https://docs.eeway.eu/frequently-asked-questions/faq/"
+      }
+    ],
+    "seconds": 37.8
+  },
+  {
+    "section": "Waybills",
+    "question": "How can I make a waybill without an order?",
+    "answer": "You can create a waybill without an order by using the Create waybill button in the waybills section [2]. When creating a waybill, you will need to enter all mandatory fields manually, as the system will not automatically populate information from an order. Ensure all required details are provided to proceed.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Waybills",
+        "url": "https://docs.eeway.eu/how-to-use/waybills/"
+      },
+      {
+        "n": 2,
+        "title": "Waybills",
+        "url": "https://docs.eeway.eu/how-to-use/waybills/"
+      },
+      {
+        "n": 3,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 53.4
+  },
+  {
+    "section": "Create Order",
+    "question": "How do I create an order?",
+    "answer": "To create an order, press \"Create order\" in the top right corner [1]. Fill in mandatory fields like Receiver, Receiver site, Supplier, and Material. Optionally add Sender site, Transport company, Vehicles, and Certificates. Set the status (Open, Closed, Completed, or Review required) and configure options like CMR creation or automatic waybill closure triggers [2]. You can also add notes, notifications, and authorizations as needed [3].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 2,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 3,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 72.8
+  },
+  {
+    "section": "Create Order",
+    "question": "How can I make a new order?",
+    "answer": "To create a new order, press \"Create order\" in the top right corner [1]. Fill in mandatory fields like Receiver, Receiver site, Supplier, and Material. Optionally, add Sender site, Transport company, Vehicles, and Certificates [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 2,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      },
+      {
+        "n": 3,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 28.4
+  },
+  {
+    "section": "Create Order",
+    "question": "What fields are required when creating an order?",
+    "answer": "When creating an order, the required fields are Receiver, Receiver site, Supplier, and Material [1]. Optional fields include Sender site, Transport company, Vehicles, and Certificates [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 2,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 3,
+        "title": "Loo tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/loo-tellimus/"
+      }
+    ],
+    "seconds": 35.2
+  },
+  {
+    "section": "Delete Order",
+    "question": "How do I delete an order?",
+    "answer": "To delete an order, click on the trash bin icon on the far right in the orders menu [1]. This will allow you to remove the order from the system.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Delete Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/delete-order/"
+      },
+      {
+        "n": 2,
+        "title": "Kustuta tellimus",
+        "url": "https://docs.eeway.eu/kuidas-kasutada/tellimused/kustuta-tellimus/"
+      },
+      {
+        "n": 3,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 33
+  },
+  {
+    "section": "Delete Order",
+    "question": "Can I remove an order after creating it?",
+    "answer": "Yes, you can remove an order after creating it by clicking on the trash bin icon on the far right in the orders menu [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Delete Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/delete-order/"
+      },
+      {
+        "n": 2,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      },
+      {
+        "n": 3,
+        "title": "Create Order",
+        "url": "https://docs.eeway.eu/how-to-use/orders/create-order/"
+      }
+    ],
+    "seconds": 48.3
+  },
+  {
+    "section": "Weighbridge",
+    "question": "How does the weighbridge integration work?",
+    "answer": "Eeway integrates with any weighbridge via an integration point or TCP protocol [1]. The process starts when a driver scans a QR code, initiating the weighing. The truck’s gross and net weights are recorded, and photos are taken upon entry and exit [2]. Traffic lights control the truck's movement, and digital screens can display load information or instructions.",
+    "sources": [
+      {
+        "n": 1,
+        "title": "Weighbridge",
+        "url": "https://docs.eeway.eu/automation/weighbridge/"
+      },
+      {
+        "n": 2,
+        "title": "Weighbridge",
+        "url": "https://docs.eeway.eu/automation/weighbridge/"
+      },
+      {
+        "n": 3,
+        "title": "How to join",
+        "url": "https://docs.eeway.eu/getting-started/how-to-join/"
+      }
+    ],
+    "seconds": 61.9
+  },
+  {
+    "section": "API",
+    "question": "Does Eeway have an API?",
+    "answer": "Yes, Eeway has an API for data exchange. You can integrate it with your company's infosystem or systems like EVR, KPDC, and LANK [2]. The API specification is available at https://api.eeway.eu/ [1].",
+    "sources": [
+      {
+        "n": 1,
+        "title": "API Reference",
+        "url": "https://docs.eeway.eu/integrations/api-reference/"
+      },
+      {
+        "n": 2,
+        "title": "Overview",
+        "url": "https://docs.eeway.eu/getting-started/overview/"
+      },
+      {
+        "n": 3,
+        "title": "API viide",
+        "url": "https://docs.eeway.eu/liidestus/api-viide/"
+      }
+    ],
+    "seconds": 57.8
   }
 ]
