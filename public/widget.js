@@ -34,7 +34,7 @@
       height: 56px;
       border-radius: 50%;
       border: none;
-      background: #d84315;
+      background: #1f95bd;
       color: #ffffff;
       cursor: pointer;
       display: flex;
@@ -42,7 +42,7 @@
       justify-content: center;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
     }
-    .eew-launcher:hover { background: #c13c12; }
+    .eew-launcher:hover { background: #1f95bd; }
     .eew-launcher svg[hidden] { display: none; }
 
     .eew-panel {
