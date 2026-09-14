@@ -24,7 +24,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 14.5px;
       line-height: 1.5;
-      color: #1c1e21;
+      color: #1f95bd;
     }
     @keyframes eew-fade { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
     @keyframes eew-bounce { 0%, 100% { opacity: .3; transform: translateY(0); } 50% { opacity: 1; transform: translateY(-3px); } }
