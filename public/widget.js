@@ -219,21 +219,21 @@
       border-radius: 19px;
       outline: none;
     }
-    .eew-input:focus { border-color: #d84315; }
+    .eew-input:focus { border-color: #1f95bd; }
     .eew-send-btn {
       width: 38px;
       height: 38px;
       flex: none;
       border: none;
       border-radius: 50%;
-      background: #d84315;
+      background: #1f95bd;
       color: #ffffff;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .eew-send-btn:hover { background: #c13c12; }
+    .eew-send-btn:hover { background: #1f95bd; }
     .eew-send-btn:disabled { opacity: 0.5; cursor: default; }
   `;
 
