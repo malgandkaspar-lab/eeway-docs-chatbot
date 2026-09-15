@@ -14,7 +14,7 @@
     * { box-sizing: border-box; }
     .eew-root {
       position: fixed;
-      bottom: 20px;
+      bottom: 8px;
       right: 20px;
       z-index: 2147483000;
       display: flex;
@@ -48,7 +48,7 @@
     .eew-panel {
       width: 380px;
       max-width: calc(100vw - 32px);
-      height: min(600px, calc(100vh - 140px));
+      height: min(600px, calc(100vh - 120px));
       background: #f4f5f7;
       border: 1px solid #e3e5e9;
       border-radius: 16px;
@@ -446,6 +446,7 @@
     messagesEl.appendChild(typingEl);
 
     function showTyping() {
+      messagesEl.appendChild(typingEl); // move to end so it appears below existing messages
       typingEl.hidden = false;
       scrollToBottom();
     }
