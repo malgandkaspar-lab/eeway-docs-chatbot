@@ -14,12 +14,15 @@
     * { box-sizing: border-box; }
     .eew-root {
       position: fixed;
-      bottom: 8px;
-      right: 20px;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 380px;
+      max-width: calc(100vw - 32px);
       z-index: 2147483000;
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: center;
       gap: 12px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 14.5px;
@@ -46,8 +49,7 @@
     .eew-launcher svg[hidden] { display: none; }
 
     .eew-panel {
-      width: 380px;
-      max-width: calc(100vw - 32px);
+      width: 100%;
       height: min(600px, calc(100vh - 120px));
       background: #f4f5f7;
       border: 1px solid #e3e5e9;
@@ -287,7 +289,6 @@
               <div class="eew-title">Eeway Assistant</div>
               <div class="eew-subtitle">Ask about using Eeway</div>
             </div>
-            <button type="button" class="eew-icon-btn eew-handoff" id="handoffBtn" title="Contact support">${ICON_HANDOFF}</button>
             <button type="button" class="eew-icon-btn" id="closeBtn" title="Close">${ICON_CLOSE_SM}</button>
           </div>
           <div class="eew-messages" id="messages"></div>
@@ -313,7 +314,7 @@
     const launcherIconOpen = root.getElementById("launcherIconOpen");
     const launcherIconClose = root.getElementById("launcherIconClose");
     const closeBtn = root.getElementById("closeBtn");
-    const handoffBtn = root.getElementById("handoffBtn");
+
 
     const messages = []; // [{role:'user'|'bot', text, html, sources, cached, isError, skipHistory}]
     let isOpen = false;
@@ -340,7 +341,6 @@
 
     launcher.addEventListener("click", () => setOpen(!isOpen));
     closeBtn.addEventListener("click", () => setOpen(false));
-    handoffBtn.addEventListener("click", () => handoff());
 
     function scrollToBottom() {
       messagesEl.scrollTop = messagesEl.scrollHeight;
@@ -598,6 +598,8 @@
       skipHistory: true,
       text: "Hi, I'm the Eeway Assistant — ask me anything about using Eeway, or pick a question below.",
     });
+
+    setOpen(true);
   }
 
   if (document.readyState === "loading") {
